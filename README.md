@@ -17,9 +17,9 @@ Este repositório hospeda a compilação web autônoma da Base de Conhecimento t
 ### 🌟 Principais Funcionalidades
 
 - **🏛️ Painel Geral & Panorama das 8 Classes:** Análise comparativa completa de arquétipos, tier lists PvE/PvP e mecânicas específicas (Gladiator, Templar, Assassin, Ranger, Sorcerer, Elementalist, Cleric, Chanter).
-- **🎥 18 Vídeos Integrados em 16:9:** Showcase oficial de habilidades ativas e estigmas da *MiniBoss* para todas as classes, além de guias estratégicos da comunidade (*Ynoki Gaming*, *HoruzTV*, *XP Con Café*, *NERFYuki*, *Ashura*).
+- **🎥 19 Vídeos Integrados em 16:9:** Showcase oficial de habilidades ativas e estigmas da *MiniBoss* para todas as classes, além de guias estratégicos da comunidade (*Ynoki Gaming*, *HoruzTV*, *XP Con Café*, *NERFYuki*, *Ashura*).
 - **📸 Lightbox Interativo de Habilidades:** Mais de 100 capturas de tela em alta definição de habilidades ativas, passivas e estigmas acessíveis instantaneamente em janela modal com um único clique.
-- **📊 52 Diagramas Visuais:** Mapeamentos de fluxo, árvores de sinergia de combate e rotinas de masmorras renderizados visualmente em CSS/Mermaid.
+- **📊 53 Diagramas Visuais:** Mapeamentos de fluxo, árvores de sinergia de combate e rotinas de masmorras renderizados visualmente em CSS/Mermaid.
 - **🔍 Motor de Busca Instantâneo (Full-Text):** Indexação em tempo real de 47 artigos técnicos com realce de palavras-chave e snippets contextuais.
 - **🌗 Modos Claro & Escuro (Dark Mode):** Paleta balanceada em grafite e cinza neutro com efeito *Glassmorphism* sobre wallpaper 4K imersivo.
 - **⚡ 100% Responsivo:** Otimizado para leitura contínua no desktop, tablets e smartphones.
@@ -55,6 +55,7 @@ Conteúdo técnico compilado e estruturado a partir de pesquisas oficiais da NCS
 - **Ynoki Gaming** (Módulos Aprofundados de Cleric & Leveling)
 - **HoruzTV** (Tier List PvP & Análise de Metagame)
 - **XP Con Café, NERFYuki, Ashura** (Roadmaps de Lançamento & Economia)
+- **xCrowleyTV** (Filosofia Anti-Rush, Liderança de Guildas & Rotinas de Início)
 
 ---
 
