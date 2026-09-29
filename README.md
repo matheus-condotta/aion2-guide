@@ -17,10 +17,10 @@ Este repositório hospeda a compilação web autônoma da Base de Conhecimento t
 ### 🌟 Principais Funcionalidades
 
 - **🏛️ Painel Geral & Panorama das 8 Classes:** Análise comparativa completa de arquétipos, tier lists PvE/PvP e mecânicas específicas (Gladiator, Templar, Assassin, Ranger, Sorcerer, Elementalist, Cleric, Chanter).
-- **🎥 19 Vídeos Integrados em 16:9:** Showcase oficial de habilidades ativas e estigmas da *MiniBoss* para todas as classes, além de guias estratégicos da comunidade (*Ynoki Gaming*, *HoruzTV*, *XP Con Café*, *NERFYuki*, *Ashura*).
+- **🎥 21 Vídeos Integrados em 16:9:** Showcase oficial de habilidades ativas e estigmas da *MiniBoss* para todas as classes, além de guias estratégicos da comunidade (*KSensei Games*, *Ynoki Gaming*, *HoruzTV*, *XP Con Café*, *NERFYuki*, *Ashura*, *xCrowleyTV*).
 - **📸 Lightbox Interativo de Habilidades:** Mais de 100 capturas de tela em alta definição de habilidades ativas, passivas e estigmas acessíveis instantaneamente em janela modal com um único clique.
 - **📊 53 Diagramas Visuais:** Mapeamentos de fluxo, árvores de sinergia de combate e rotinas de masmorras renderizados visualmente em CSS/Mermaid.
-- **🔍 Motor de Busca Instantâneo (Full-Text):** Indexação em tempo real de 47 artigos técnicos com realce de palavras-chave e snippets contextuais.
+- **🔍 Motor de Busca Instantâneo (Full-Text):** Indexação em tempo real de 48 artigos técnicos com realce de palavras-chave e snippets contextuais.
 - **🌗 Modos Claro & Escuro (Dark Mode):** Paleta balanceada em grafite e cinza neutro com efeito *Glassmorphism* sobre wallpaper 4K imersivo.
 - **⚡ 100% Responsivo:** Otimizado para leitura contínua no desktop, tablets e smartphones.
 
@@ -30,7 +30,7 @@ Este repositório hospeda a compilação web autônoma da Base de Conhecimento t
 
 ```text
 aion2-guide/
-├── index.html              # Aplicação Web SPA completa e autônoma (~1.4 MB)
+├── index.html              # Aplicação Web SPA completa e autônoma (~1.5 MB)
 ├── Anexos/                 # Acervo de capturas de tela otimizadas em alta definição
 │   ├── 01_earths_retribution.png
 │   ├── ...
@@ -52,6 +52,7 @@ aion2-guide/
 
 Conteúdo técnico compilado e estruturado a partir de pesquisas oficiais da NCSoft e contribuições de criadores da comunidade:
 - **MiniBoss** (Showcase Oficial de Habilidades)
+- **KSensei Games** (Guias de Macros Nativas, Cancelamento de Animação & Leveling para Iniciantes)
 - **Ynoki Gaming** (Módulos Aprofundados de Cleric & Leveling)
 - **HoruzTV** (Tier List PvP & Análise de Metagame)
 - **XP Con Café, NERFYuki, Ashura** (Roadmaps de Lançamento & Economia)
