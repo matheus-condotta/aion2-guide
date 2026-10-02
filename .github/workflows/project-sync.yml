@@ -1,0 +1,32 @@
+name: GitHub Projects v2 Sync
+
+on:
+  issues:
+    types: [opened, labeled, closed, reopened]
+  pull_request:
+    types: [opened, ready_for_review, converted_to_draft, closed]
+
+permissions:
+  contents: read
+  issues: read
+  pull-requests: read
+
+jobs:
+  sync-project-status:
+    name: Sync Status with GitHub Projects v2
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'matheus-condotta'
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Execute Project Sync
+        env:
+          PROJECTS_PIPELINE_TOKEN: ${{ secrets.PROJECTS_PIPELINE_TOKEN }}
+        run: |
+          python .github/scripts/project_sync.py
