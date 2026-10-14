@@ -839,6 +839,145 @@
             gap: 10px;
         }
 
+        
+        /* DONUT CHART COMPONENT (FACTION IDENTITY) */
+        .donut-showcase-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 28px;
+            margin: 22px 0 28px 0;
+            padding: 22px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+        }
+
+        .donut-svg-wrapper {
+            position: relative;
+            width: 220px;
+            height: 220px;
+            flex-shrink: 0;
+        }
+
+        .donut-svg-wrapper svg {
+            width: 100%;
+            height: 100%;
+            transform: rotate(-90deg);
+        }
+
+        .donut-slice {
+            transition: stroke-width 0.2s ease, opacity 0.2s ease;
+            cursor: pointer;
+        }
+
+        .donut-slice:hover {
+            stroke-width: 28;
+            opacity: 0.9;
+        }
+
+        .donut-center-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            pointer-events: none;
+        }
+
+        .donut-center-number {
+            font-size: 2.1rem;
+            font-weight: 800;
+            line-height: 1;
+            color: var(--text-normal);
+        }
+
+        .donut-center-sub {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .donut-center-badge {
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            margin-top: 2px;
+        }
+
+        .donut-legend-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 1;
+            min-width: 280px;
+            max-width: 620px;
+        }
+
+        .donut-legend-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 14px;
+            background: var(--bg-card-sub);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            transition: transform 0.15s ease, border-color 0.15s ease;
+        }
+
+        .donut-legend-card:hover {
+            transform: translateX(4px);
+        }
+
+        .donut-legend-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .donut-indicator-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        }
+
+        .donut-legend-name {
+            font-size: 0.86rem;
+            font-weight: 700;
+            color: var(--text-normal);
+        }
+
+        .donut-legend-desc {
+            font-size: 0.73rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .donut-legend-stats {
+            text-align: right;
+            white-space: nowrap;
+            margin-left: 12px;
+        }
+
+        .donut-legend-count {
+            font-size: 0.92rem;
+            font-weight: 800;
+            color: var(--text-normal);
+        }
+
+        .donut-legend-pct {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
         /* SEQUENCE DIAGRAM CARDS */
         .sequence-card-container {
             display: flex;
@@ -4271,14 +4410,121 @@
 <h2 id="1-o-mapa-geral-dos-206-mascotes-onde-eles-estão">1. O Mapa Geral dos 206 Mascotes (Onde eles Estão?)</h2>
 <p>Ao todo, o banco de dados oficial de Aion 2 conta com <strong>206 mascotes colecionáveis</strong>. O gráfico abaixo mostra de forma clara e descomplicada de onde cada um deles realmente vem:</p>
 
-<pre class="mermaid">
-pie title "Distribuição dos 206 Mascotes por Origem no Jogo"
-    "Elysea (Mundo Elyos - Campo)" : 70
-    "Asmodae (Mundo Asmodian - Campo)" : 70
-    "Abismo (Reshanta - Zonas Compartilhadas)" : 20
-    "Masmorras & Expedições (Instâncias)" : 14
-    "Exclusivos de Baús, Passes & Lojas" : 32
-</pre>
+<div class="donut-showcase-container">
+    <div class="donut-svg-wrapper">
+        <svg viewBox="0 0 240 240">
+            <!-- Background Ring Track -->
+            <circle cx="120" cy="120" r="85" fill="none" stroke="var(--border-color)" stroke-width="24" opacity="0.3"></circle>
+            
+            <!-- 1. Elysea (Solar Gold / Elyos) -->
+            <circle class="donut-slice" cx="120" cy="120" r="85" fill="none" stroke="#f59e0b" stroke-width="24"
+                    stroke-dasharray="181.48 534.07" stroke-dashoffset="0" stroke-linecap="butt">
+                <title>Elysea (Mundo Elyos): 70 Mascotes (34,0%)</title>
+            </circle>
+            
+            <!-- 2. Asmodae (Nocturnal Purple / Asmodian) -->
+            <circle class="donut-slice" cx="120" cy="120" r="85" fill="none" stroke="#8b5cf6" stroke-width="24"
+                    stroke-dasharray="181.48 534.07" stroke-dashoffset="-181.48" stroke-linecap="butt">
+                <title>Asmodae (Mundo Asmodian): 70 Mascotes (34,0%)</title>
+            </circle>
+            
+            <!-- 3. Abismo (Astral Cyan / Reshanta) -->
+            <circle class="donut-slice" cx="120" cy="120" r="85" fill="none" stroke="#06b6d4" stroke-width="24"
+                    stroke-dasharray="51.85 534.07" stroke-dashoffset="-362.96" stroke-linecap="butt">
+                <title>Abismo (Reshanta): 20 Mascotes (9,7%)</title>
+            </circle>
+            
+            <!-- 4. Masmorras & Expedições (Lava Red / Instâncias) -->
+            <circle class="donut-slice" cx="120" cy="120" r="85" fill="none" stroke="#ef4444" stroke-width="24"
+                    stroke-dasharray="36.30 534.07" stroke-dashoffset="-414.81" stroke-linecap="butt">
+                <title>Masmorras &amp; Expedições: 14 Mascotes (6,8%)</title>
+            </circle>
+            
+            <!-- 5. Exclusivos de Baús, Passes & Lojas (Royal Magenta) -->
+            <circle class="donut-slice" cx="120" cy="120" r="85" fill="none" stroke="#d946ef" stroke-width="24"
+                    stroke-dasharray="82.96 534.07" stroke-dashoffset="-451.11" stroke-linecap="butt">
+                <title>Exclusivos de Baús, Passes &amp; Lojas: 32 Mascotes (15,5%)</title>
+            </circle>
+        </svg>
+        <div class="donut-center-label">
+            <div class="donut-center-number">206</div>
+            <div class="donut-center-sub">Mascotes</div>
+            <div class="donut-center-badge">100% TOTAL</div>
+        </div>
+    </div>
+    
+    <div class="donut-legend-grid">
+        <div class="donut-legend-card" style="border-left: 4px solid #f59e0b;">
+            <div class="donut-legend-left">
+                <div class="donut-indicator-dot" style="background:#f59e0b;"></div>
+                <div>
+                    <div class="donut-legend-name">Elysea (Mundo Elyos)</div>
+                    <div class="donut-legend-desc">Poeta, Verteron, Eltnen, Heiron, Theobomos (Nativo Elyos / Invasão via Fendas)</div>
+                </div>
+            </div>
+            <div class="donut-legend-stats">
+                <div class="donut-legend-count">70 Pets</div>
+                <div class="donut-legend-pct">34,0%</div>
+            </div>
+        </div>
+        
+        <div class="donut-legend-card" style="border-left: 4px solid #8b5cf6;">
+            <div class="donut-legend-left">
+                <div class="donut-indicator-dot" style="background:#8b5cf6;"></div>
+                <div>
+                    <div class="donut-legend-name">Asmodae (Mundo Asmodian)</div>
+                    <div class="donut-legend-desc">Ishalgen, Altgard, Morheim, Beluslan, Brusthonin (Nativo Asmodian / Invasão via Fendas)</div>
+                </div>
+            </div>
+            <div class="donut-legend-stats">
+                <div class="donut-legend-count">70 Pets</div>
+                <div class="donut-legend-pct">34,0%</div>
+            </div>
+        </div>
+        
+        <div class="donut-legend-card" style="border-left: 4px solid #06b6d4;">
+            <div class="donut-legend-left">
+                <div class="donut-indicator-dot" style="background:#06b6d4;"></div>
+                <div>
+                    <div class="donut-legend-name">O Abismo (Reshanta)</div>
+                    <div class="donut-legend-desc">Reshanta Inferior, Superior e Ilhas do Núcleo (PvPvE Compartilhado)</div>
+                </div>
+            </div>
+            <div class="donut-legend-stats">
+                <div class="donut-legend-count">20 Pets</div>
+                <div class="donut-legend-pct">9,7%</div>
+            </div>
+        </div>
+        
+        <div class="donut-legend-card" style="border-left: 4px solid #ef4444;">
+            <div class="donut-legend-left">
+                <div class="donut-indicator-dot" style="background:#ef4444;"></div>
+                <div>
+                    <div class="donut-legend-name">Masmorras &amp; Expedições</div>
+                    <div class="donut-legend-desc">Krao Cave, Fire Temple, Draupnir, etc. (Exclusivos de Chefes de Instância)</div>
+                </div>
+            </div>
+            <div class="donut-legend-stats">
+                <div class="donut-legend-count">14 Pets</div>
+                <div class="donut-legend-pct">6,8%</div>
+            </div>
+        </div>
+        
+        <div class="donut-legend-card" style="border-left: 4px solid #d946ef;">
+            <div class="donut-legend-left">
+                <div class="donut-indicator-dot" style="background:#d946ef;"></div>
+                <div>
+                    <div class="donut-legend-name">Exclusivos de Baús, Passes &amp; Lojas</div>
+                    <div class="donut-legend-desc">7 Pets Special (Pagati, Dragão Negro, etc.) + 25 variantes de marco e Torre</div>
+                </div>
+            </div>
+            <div class="donut-legend-stats">
+                <div class="donut-legend-count">32 Pets</div>
+                <div class="donut-legend-pct">15,5%</div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <h3 id="guia-rápido-dos-mundos-regiões">Guia Rápido dos Mundos &amp; Regiões:</h3>
 <ol>
