@@ -1,7 +1,7 @@
 # Aion 2 — Guia Técnico Interativo & Base de Conhecimento
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen?logo=github)](https://matheus-condotta.github.io/aion2-guide/)
-[![Status](https://img.shields.io/badge/Status-Em%20Produ%C3%A7%C3%A3o%20%7C%2049%20M%C3%B3dulos-blue)](#)
+[![Status](https://img.shields.io/badge/Status-Em%20Produ%C3%A7%C3%A3o%20%7C%2050%20M%C3%B3dulos-blue)](#)
 [![Game](https://img.shields.io/badge/Aion%202-Unreal%20Engine%205-purple)](#)
 [![License](https://img.shields.io/badge/Licen%C3%A7a-Comunit%C3%A1ria-orange)](#)
 
@@ -17,11 +17,12 @@ Este repositório hospeda a compilação web autônoma da Base de Conhecimento t
 ### Principais Funcionalidades
 
 - **Painel Geral & Panorama das 8 Classes:** Análise comparativa completa de arquétipos, tier lists PvE/PvP e mecânicas específicas (Gladiator, Templar, Assassin, Ranger, Sorcerer, Elementalist, Cleric, Chanter).
+- **Farm de Mascotes & Rush de Conhecimento (0 aos 100 Pets):** Roteiro noob-friendly em 3 atos cobrindo a distribuição dos 206 mascotes (Elysea, Asmodae, Abismo, Instâncias e Baús), as 3 réguas calibradas de early game (Pega 5, Régua de Ouro 15-25 pets Nv 3 e Pós-Cap 45), a regra econômica de Analyze/Reroll 100% livre até o Nível 9 e o bônus permanente de velocidade de movimento.
 - **Progressão Completa de Gear Score (1000 ao 2800 GS):** Roteiro determinístico pós-Nível 45 cobrindo os 6 objetivos de progressão (Conquista 1, 2 e 3 Estrelas, Transcendência Fases 1 e 2, evolução 100% garantida de Cinto/Amuleto via *Substance Morph*, gestão anti-duplicata de Baús de Pity e preparação para a Raide do Santuário de Ludra).
-- **31 Vídeos Integrados em 16:9:** Showcases oficiais de habilidades ativas e estigmas (*MiniBoss*), *playthroughs* completos das 5 primeiras Expedições (*DefectiveGaming*) e masterclasses estratégicas da comunidade (*Dean Gaming TV*, *Fubgun*, *Scaryel*, *BoredAF*, *KSensei Games*, *Ynoki Gaming*, *HoruzTV*, *XP Con Café*, *NERFYuki*, *Ashura*, *xCrowleyTV*).
+- **32 Vídeos Integrados em 16:9:** Showcases oficiais de habilidades ativas e estigmas (*MiniBoss*), *playthroughs* completos das 5 primeiras Expedições (*DefectiveGaming*) e masterclasses estratégicas da comunidade (*Dean Gaming TV*, *Fubgun*, *Scaryel*, *BoredAF*, *KSensei Games*, *Ynoki Gaming*, *HoruzTV*, *XP Con Café*, *NERFYuki*, *Ashura*, *xCrowleyTV*).
 - **Lightbox Interativo de Habilidades:** Mais de 100 capturas de tela em alta definição de habilidades ativas, passivas e estigmas acessíveis instantaneamente em janela modal com um único clique.
 - **59 Diagramas Visuais:** Mapeamentos de fluxo, árvores de sinergia de combate, escadas de progressão de Gear Score e rotinas de masmorras renderizados nativamente em CSS/Mermaid.
-- **Motor de Busca Instantâneo (Full-Text):** Indexação em tempo real de **49 artigos técnicos** com realce de palavras-chave e snippets contextuais.
+- **Motor de Busca Instantâneo (Full-Text):** Indexação em tempo real de **50 artigos técnicos** com realce de palavras-chave e snippets contextuais.
 - **Modos Claro & Escuro (Dark Mode):** Paleta balanceada em grafite e cinza neutro com efeito *Glassmorphism* sobre wallpaper 2K/4K embutido em Base64 (100% autônomo).
 - **100% Responsivo:** Otimizado para leitura contínua no desktop, tablets e smartphones.
 
@@ -56,7 +57,8 @@ Conteúdo técnico compilado e estruturado a partir de pesquisas oficiais da NCS
 - **Fubgun** (Guia Estruturado de Progressão de Gear Score 1000 ao 2100+ GS, Pity System & Planilha de Dailies/Weeklies)
 - **Scaryel** (Guia Intuitivo de Macro de Habilidade, Empilhamento de Baixo para Cima & Animation Cancel pela Sombra Preta)
 - **DefectiveGaming** (Série de Playthroughs Puros das 5 Expedições: *Krao Cave*, *Urugugu*, *Fire Temple*, *Draupnir* e *Vakron*)
-- **BoredAF** (Guia Rank #1 Supreme Commander de Cleric, 4 Stigmas, Wisdom/Nature & Calibração de Arcanas)
+- **BoredAF** (Guia Rank #1 Supreme Commander de Cleric, 4 Stigmas, Wisdom/Nature, Macro de 2 Botões com Cancelamento Condicional & Build Oficial no QuestLog)
+- **Leonis, Sen Evades & Medieval Marty** (Análise Estatística de Taxas de Rolagem de Mascotes, Genus Insights & Validação do Meta Global)
 - **MiniBoss** (Showcase Oficial de Habilidades das 8 Classes)
 - **KSensei Games** (Guias de Macros Nativas, Cancelamento de Animação & Leveling para Iniciantes)
 - **Ynoki Gaming** (Módulos Aprofundados de Cleric & Leveling)
