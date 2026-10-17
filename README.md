@@ -53,6 +53,7 @@ aion2-guide/
 ## Créditos & Agradecimentos à Comunidade
 
 Conteúdo técnico compilado e estruturado a partir de pesquisas oficiais da NCSoft e contribuições de criadores especialistas da comunidade:
+- **Antochi** (Canal [@Antochi-c7v](https://www.youtube.com/@Antochi-c7v) — Engenharia de Stigmas no Global, Curvas de Custo de Shards, Regra dos Múltiplos de 5, Benchmarks de Tick Rate/FPS na UE5 e Macros Nativas de 2 Botões para as 8 Classes)
 - **Dean Gaming TV** (Masterclass Holística de 2 Horas — Do Nível 1 aos 2800 GS, Alts, Panteão, Arcanas & Economia)
 - **Fubgun** (Guia Estruturado de Progressão de Gear Score 1000 ao 2100+ GS, Pity System & Planilha de Dailies/Weeklies)
 - **Scaryel** (Guia Intuitivo de Macro de Habilidade, Empilhamento de Baixo para Cima & Animation Cancel pela Sombra Preta)
